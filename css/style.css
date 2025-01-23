@@ -1,69 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
-    /*
-    font-family: Arial, Helvetica, sans-serif; 
-    CSS 'reset'. this overwrite other selectors. 
-    not advised.
-    */
-}
-
-html {
-    font-size: 18px;
-}
-
-body{
-    background-color: darkslategrey;
-    color: aliceblue;
-    line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-.section1{
-    color: rgb(211, 190, 231);
+h1 {
+    border: 11px double #5E5768;
+    font-size: 1.5rem;
+    padding: 1.5em;
+    margin: 1.5em;
+    /* margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-left: 2em; 
+    margin-right: 2em;*/
+    outline: 5px solid rgb(136, 184, 184);
+    outline-offset: -20px;
 }
 
-#section2{
-    color: blanchedalmond;
-}
-
-h1, h2 {
-    color: rgb(165, 136, 98, 0.5); 
-    /* 
-    rgb = red, green, blue and transparency 
-    hexcode = '#' + 6 value from 0 to 9 and a to f
-    hsl = rgb but different representation
-    in vscode you can click the color square to open a box to change the color, you can also switch from hex to rgb and vice versa by clikcing the color 'title' in that box
-    */
-}
-p {
-    color: coral;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-p {
-    color: rgb(180, 235, 245);
-}
-p span {
-    text-transform: uppercase;
+.circle {
+    margin: 2rem auto;
     background-color: gold;
-}
-a {
-    color: darkgrey;
-}
-
-.paragraph-in-section2 {
-    color: cornflowerblue;
-}
-
-section, header {
-    border: 1px solid;
-    border-color: aliceblue;
-    padding: 1rem;
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
 }
 
-hr {
-    color: aliceblue;
+/* Typography */
+
+body {
+    background-color: beige;
+    padding: 10%;
+    font-size: 2rem;
+    font-family:'Roboto', sans-serif;
+    color: #211e25;
+}
+
+header {
+    border-bottom:#211e25 solid;
+    border-width: 100%;
+    padding-bottom: 1em;
+    
+}
+
+a, nav{
+    background: linear-gradient(currentColor 0 0) 
+    bottom left/
+    var(--underline-width, 0%) .1em
+    no-repeat;
+    color: hsl(219, 49%, 57%);
+    display: inline-block;
+    text-decoration: none;
+    transition: background-size 0.5s;
+}
+a:hover, a:focus {
+    --underline-width: 100%
+}
+a:active {
+    color: red;
+}
+p{
+    font-size: .5em;
+    text-indent: 2em;
+    line-height: 1.4;
+    
+}
+
+section {
+    margin: 2rem;
 }
