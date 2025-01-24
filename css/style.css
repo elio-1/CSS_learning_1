@@ -41,7 +41,7 @@ body {
     color: #211e25;
 }
 
-header {
+.separating-bar  {
     border-bottom:#211e25 solid;
     border-width: 100%;
     padding-bottom: 1em;
@@ -57,6 +57,11 @@ a, nav{
     display: inline-block;
     text-decoration: none;
     transition: background-size 0.5s;
+}
+nav li {
+    text-align: left;
+    font-size: 1em;
+    list-style-type: none;
 }
 a:hover, a:focus {
     --underline-width: 100%
@@ -74,3 +79,22 @@ p{
 section {
     margin: 2rem;
 }
+
+li {
+    font-size: .8em;
+}
+
+ol {
+    list-style-type:lower-roman ;
+}
+
+ul ::marker {
+    font-size: 1em;
+    content: '>> ';
+}
+
+
+/* ul li:nth-child(even) {
+    text-align:center;
+    list-style: inside url('img') square;
+} */
